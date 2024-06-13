@@ -1,6 +1,6 @@
 {
 	"name": "peer-webrtc",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "peer-webrtc simplifies the implementation of WebRTC connections by providing a straightforward API for establishing peer-to-peer communication. Ideal for developers looking to integrate real-time audio, video, and data channels into their applications with minimal setup.",
 	"main": "index.js",
 	"type": "module",

@@ -9,7 +9,7 @@ class PeerWebRTC {
 			},
 			onConnect: () => {
 			},
-			addIceCandidate: () => {
+			onIceCandidate: () => {
 			},
 			onData: () => {
 			},
@@ -36,7 +36,7 @@ class PeerWebRTC {
 
 		this.peer.onicecandidate = (e) => {
 			if (e.candidate)
-				this.events.addIceCandidate(e.candidate)
+				this.events.onIceCandidate(e.candidate)
 		}
 
 		this.peer.ondatachannel = (e) => {
@@ -72,11 +72,11 @@ class PeerWebRTC {
 		this.events.onSignal = callback
 	}
 
-	async addIceCandidate(callback) {
-		this.events.addIceCandidate = callback
+	async onIceCandidate(callback) {
+		this.events.onIceCandidate = callback
 	}
 
-	async addICECandidate(candidate) {
+	async addIceCandidate(candidate) {
 		this.peer.addIceCandidate(new RTCIceCandidate(candidate))
 	}
 
