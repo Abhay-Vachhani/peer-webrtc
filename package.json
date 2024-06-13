@@ -1,0 +1,22 @@
+{
+	"name": "peer-webrtc",
+	"version": "1.0.1",
+	"description": "peer-webrtc simplifies the implementation of WebRTC connections by providing a straightforward API for establishing peer-to-peer communication. Ideal for developers looking to integrate real-time audio, video, and data channels into their applications with minimal setup.",
+	"main": "index.js",
+	"type": "module",
+	"repository": "https://github.com/Abhay-Vachhani/peer-webrtc.git",
+	"author": "Abhay Vachhani <abhayvachhani28@gmail.com>",
+	"license": "MIT",
+	"keywords": [
+		"peer-webrtc",
+		"WebRTC",
+		"peer-to-peer",
+		"real-time",
+		"communication",
+		"video",
+		"audio",
+		"data channels",
+		"rtc",
+		"peer"
+	]
+}
