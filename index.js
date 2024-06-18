@@ -9,6 +9,8 @@ class PeerWebRTC {
 			},
 			onConnect: () => {
 			},
+			onDisconnect: () => {
+			},
 			onIceCandidate: () => {
 			},
 			onData: () => {
@@ -28,6 +30,9 @@ class PeerWebRTC {
 		this.peer.onconnectionstatechange = (e) => {
 			switch (this.peer.connectionState) {
 				case 'connected':
+					break;
+				case 'disconnected':
+					this.events.onDisconnect()
 					break;
 				default:
 					break;
@@ -82,6 +87,10 @@ class PeerWebRTC {
 
 	async onConnect(callback) {
 		this.events.onConnect = callback
+	}
+
+	async onDisconnect(callback) {
+		this.events.onDisconnect = callback
 	}
 
 	async onData(callback) {
