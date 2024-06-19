@@ -113,6 +113,10 @@ class PeerWebRTC {
 	async send(data) {
 		this.datachannel.send(data)
 	}
+
+	disconnect() {
+		this.peer.close()
+	}
 }
 
 export default PeerWebRTC
