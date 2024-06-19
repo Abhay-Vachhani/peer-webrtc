@@ -25,6 +25,16 @@ Install `peer-webrtc` using yarn:
 yarn add peer-webrtc
 ```
 
+Use `peer-webrtc` with CDN:
+
+```html
+<script type="module">
+	import PeerWebRTC from 'https://cdn.jsdelivr.net/npm/peer-webrtc/peer-webrtc.min.js'
+
+	const peer = new PeerWebRTC(true, mediaStream, rtcConfig);
+</script>
+```
+
 ## Basic Usage
 
 ### Creating a Peer Connection
